@@ -1,4 +1,5 @@
-## quickstart
+
+<img src="https://github.com/zhangfu-git/wx_flapyBird_game/blob/master/index.jpeg" width="200"/>
 
 ## 源码目录介绍
 ```
