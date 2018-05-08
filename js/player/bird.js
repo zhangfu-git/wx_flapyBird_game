@@ -1,7 +1,5 @@
 import Sprite   from '../base/sprite'
 import Music from '../runtime/music'
-const screenWidth    = window.innerWidth
-const screenHeight   = window.innerHeight
 
 // 玩家相关常量设置
 const PLAYER_IMG_SRC = 'images/bird.png'
@@ -32,12 +30,7 @@ export default class Player extends Sprite {
   initEvent() {
     canvas.addEventListener('touchstart', ((e) => {
       e.preventDefault()
-
-      let x = e.touches[0].clientX
-      let y = e.touches[0].clientY
-
       this.fly();
-
     }).bind(this));
   }
 

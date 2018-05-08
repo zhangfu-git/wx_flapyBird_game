@@ -47,10 +47,6 @@ export default class Enemy {
       if (databus.pipe[i].x == 12) {
         this.createdRndPipe();
       }
-
-      // if (this.removePipe(databus.pipe[i])) {
-      //   pipeLen -= 1;
-      // }
       
       this.collisionDetection(databus.pipe[i]);
       
@@ -67,17 +63,6 @@ export default class Enemy {
       x: screenWidth,
       y: rndX
     });
-  }
-
-  /**
-   * 移除超出屏幕的pipe
-  */
-  removePipe(pipe) {
-    if (pipe.x <= -pipeW) {
-      databus.removePipe();
-      return true;
-    }
-    return false;
   }
   
   /**
